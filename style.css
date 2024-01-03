@@ -1,0 +1,532 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.imgslider {
+  width: 100%;
+  height: 800px;
+  background-image: url('image2.jpg');
+  background-size: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px, 8px, 24px;
+  animation: changeimage 20s linear infinite;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes changeimage {
+  0% {
+    background-image: url(image1.jpg);
+  }
+  25% {
+    background-image: url(image2.jpg);
+  }
+  50% {
+    background-image: url(inclusives.jpg);
+  }
+  75% {
+    background-image: url(resorts.jpg);
+  }
+  100% {
+    background-image: url(cruises.jpg);
+  }
+}
+
+.bottom-right-content {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 20px;
+  z-index: 2;
+}
+
+.bottom-right-content h1 {
+  font-size: xx-large;
+}
+
+.bottom-right-content .explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.bottom-right-content .explore-button:hover {
+  background-color: #21064c;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 2;
+}
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+  justify-content: space-between;
+
+}
+
+.navigation li {
+  display: inline-block;
+  font-size: larger;
+}
+
+.logout {
+  flex: 0;
+    padding: 10px 20px; /* Adds space inside the button */
+    background-color: #cd0fd0; /* A bright color for visibility */
+    color: white; /* Text color */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Changes the cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      /* Previous styles */
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .logout i {
+      margin-right: 8px; /* Adds space between the icon and text */
+  }
+
+.logout:hover {
+    background-color: #0719dc; /* Darker shade on hover */
+}
+
+
+.logo img {
+  width: 200px; /* Adjust this value as needed */
+  height: auto; /* This ensures the aspect ratio is maintained */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the minimum height is the full viewport */
+}
+
+#background-image {
+  position: relative; /* Fixed position to cover the full page and not scroll with the content */
+  top: 10;
+  left: 0;
+  width: 100vw; /* 100% of the viewport's width */
+  height: 100vh; /* 100% of the viewport's height */
+  z-index: -1; /* Place the image behind other content */
+  object-fit: cover; /* Ensures the image covers the full area without stretching */
+}
+
+header {
+  position: relative; /* Ensure that the header is positioned above the background image */
+  z-index: 10; /* Higher z-index than the background image */
+}
+
+/* Styles for the rest of your content to ensure they are visible above the background image */
+.navigation, .logo, .logout {
+  position: relative;
+  z-index: 10;
+}
+.explore-button{
+  display: inline-block; /* Make it inline but with block properties */
+  margin-top: 20px; /* Add some space above the button */
+  padding: 10px 20px; /* Padding inside the button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for hover effect */
+
+}
+.explore-button:hover{
+ 
+    background-color: #0056b3; /* Darker shade on hover */
+  
+}
+.centered-content {
+  position: absolute;
+  bottom: 0; /* Align content to the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center the content horizontally */
+  color: white; /* Set text color */
+  padding: 20px; /* Add some padding */
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay for readability */
+}
+
+.bottom-right-content {
+  position: absolute;
+  bottom: 0; /* Align content to the bottom */
+  left: 0; /* Align content to the right */
+  color: white; /* Set text color */
+  padding: 20px; /* Add some padding */
+  
+}
+
+.explore-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #21064c;
+} */
+h1{
+  font-size: xx-large;
+}
+.destination{
+  font-size: xx-large;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: rgb(160, 25, 140);
+  font-size: 25px;
+}
+a:hover{
+  background-color: #71acbe;
+}
+.destination{
+ font-size: 500px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+.flex-container{
+	display: flex;
+}
+.flex-item{
+	flex:10;
+	padding:20px;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	margin:10px;}
+  button{
+    background-color: #000000;
+    color: white;
+    border-radius: 10%;
+    float: center;
+    font-family: 'Times New Roman';
+  }
+  .explore{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    float: right;
+    size: 20;
+  }
+  .background-container {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/blue-snow.png');
+    background-size: cover; /* This will ensure the image covers the entire container */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image in the container */
+}
+.staycation{
+  text-align: center;
+}
+button{
+  justify-content: space-between;
+}
+.column {
+  width: 30%; /* 3 images per column */
+  margin: 10px;
+}
+
+.large-column {
+  width: 30%; /* Adjust the width of the large column */
+  margin: 10px;
+}
+
+.column img,
+.large-column img {
+  width: 100%;
+  height: auto; /* Allow images to maintain their original aspect ratio */
+  display: block;
+ 
+  margin-bottom: 10px;
+}
+
+.custom-size {
+  width: 100%;
+  max-height: 1000px; /* Set a maximum height for image 7 and 8 */
+  object-fit: cover;
+}
+
+/* Add margin to columns 1 and 3 */
+.column:first-child,
+.column:last-child {
+  margin-top: 100px; /* Adjust the margin as needed */
+}
+
+
+  .gallery-container {
+      display: flex;
+      justify-content: space-between; /* Adjust the spacing between columns */
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+  }
+
+
+
+.location-button {
+  background-color: #ffffff;
+  color: #515151;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 40px;
+  align-self: start;
+  
+  cursor: pointer;
+  outline: none;
+}
+
+.location-button.active,
+.location-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.photo-album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+  padding:0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.photo {
+  background-color: none;
+  padding:0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.photo-caption {
+  color: #555;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p{
+  font-size: 18px;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  width: 250px;
+  height: 70px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-advancements {
+  text-align: right;
+}
+
+.footer-advancements p {
+  margin: 5px 0;
+}
+
+.social-icons img {
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.input-field {
+  margin-right: 10px; /* Add some space between the text and the input field */
+}
+
+.btn-secondary {
+  margin-left: 10px; /* Add some space between the input field and the button */
+}
+
+/* Default styles for larger screens */
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.bottom-right-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        margin-top: 20px;
+    }
+
+    .bottom-right-content {
+        padding: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .destination h1 {
+        font-size: 36px;
+    }
+
+    .staycation {
+        font-size: 36px;
+    }
+}
+
+/* General styling for the form */
+.tour-search {
+  background-image: url('william-warby-wwt99cy9jTk-unsplash.jpg');
+  padding: 200px;
+  background-size: cover; /* This will ensure the image covers the entire container */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-position: center; /* This centers the image in the container */
+}
+
+.tour-search-form {
+  width: 500px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  height: 400px; 
+  position: relative;
+}
+
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for the button */
+.btn {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0062cc; /* Darker blue on hover */
+}
+
+/* Optional styling for validation error messages */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
